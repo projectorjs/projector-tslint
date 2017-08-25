@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "Projector wrapper for TSLint",
   "main": "index.js",
-  "files": ["index.js", "utils.js"],
+  "files": ["index.js"],
   "scripts": {
     "test": "jest",
     "test:coverage": "jest --coverage",
