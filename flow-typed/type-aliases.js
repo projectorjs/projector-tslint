@@ -15,9 +15,19 @@ export type LintResult = {
   output: string
 };
 
-export type ILinterOptions = {
-  fix: boolean,
+export type LinterOptions = {
+  fix?: boolean,
   formatter?: string | Formatter,
   formattersDirectory?: string,
   rulesDirectory?: string | string[]
+};
+
+export type RunOptions = {
+  files: Array<string>,
+  configPath?: string,
+  linterOptions?: LinterOptions
+};
+
+export type ConfigCache = {
+  [key: string]: mixed
 };
