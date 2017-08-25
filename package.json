@@ -1,0 +1,38 @@
+{
+  "name": "projector-tslint",
+  "version": "0.0.0",
+  "description": "Projector wrapper for TSLint",
+  "main": "index.js",
+  "files": ["index.js", "utils.js"],
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "lint:flow": "flow",
+    "lint:staged": "lint-staged"
+  },
+  "author": "Stanislav Sysoev <@d4rkr00t>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.1.0",
+    "lodash.merge": "^4.6.0"
+  },
+  "peerDependencies": {
+    "tslint": ">= 5.6.0 < 6"
+  },
+  "devDependencies": {
+    "flow-bin": "^0.53.1",
+    "jest": "^20.0.4",
+    "lint-staged": "^4.0.3",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.5.3",
+    "tslint": "^5.6.0",
+    "typescript": "^2.5.1"
+  },
+  "pre-commit": ["lint:flow", "test:coverage", "lint:staged"],
+  "lint-staged": {
+    "*.js": ["prettier --write --print-width 120", "git add"]
+  },
+  "jest": {
+    "collectCoverageFrom": ["*.js"]
+  }
+}

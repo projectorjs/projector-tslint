@@ -1,0 +1,12 @@
+{
+  "name": "example-with-no-errors",
+  "version": "0.0.0",
+  "description": "",
+  "main": "build.js",
+  "scripts": {
+    "build": "node ./build.js"
+  },
+  "keywords": [],
+  "author": "Stanislav Sysoev <@d4rkr00t>",
+  "license": "MIT"
+}
