@@ -23,6 +23,6 @@ test("failure", () => {
       configPath: "./example/with-errors/tslint.json"
     })
     .catch(err => {
-      expect(err.length).toMatchSnapshot();
+      expect(err).toHaveLength(2);
     });
 });
