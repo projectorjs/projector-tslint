@@ -1,15 +1,15 @@
-import someFunc, { SomeType } from "./utils";
+import someFunc, { SomeType } from './utils';
 
 class Foo {
   private prop: SomeType = { a: 1 };
 
   private method() {
-    return "bar";
+    return 'bar';
   }
 
   secondMethod() {
     someFunc();
-    return "foo" + "bar";
+    return 'foo' + 'bar';
   }
 }
 
