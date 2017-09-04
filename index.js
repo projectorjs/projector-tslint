@@ -5,6 +5,10 @@
  *  https://palantir.github.io/tslint/usage/configuration/
  */
 
+/*::
+  import type { ConfigCache, LinterOptions, LintResult, RunOptions } from './types';
+*/
+
 "use strict";
 
 const path = require("path");
